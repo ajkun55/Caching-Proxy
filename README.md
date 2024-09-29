@@ -7,6 +7,7 @@ This is my solution of a [Roadmap Project](https://roadmap.sh/projects/caching-s
 You are required to build a CLI tool that starts a caching proxy server, it will forward requests to the actual server and cache the responses. If the same request is made again, it will return the cached response instead of forwarding the request to the server.
 
 ## Requirements
+
 User should be able to start the caching proxy server by running a command like following:
 
 ```
@@ -14,7 +15,9 @@ caching-proxy --port <number> --origin <url>
 ```
 
 --port is the port on which the caching proxy server will run.
+
 --origin is the URL of the server to which the requests will be forwarded.
+
 For example, if the user runs the following command:
 
 ```
@@ -34,3 +37,9 @@ X-Cache: MISS
 ```
 
 If the same request is made again, the caching proxy server should return the cached response instead of forwarding the request to the server.
+
+To use as CLI, install dependency first, then install the package itself
+
+```
+npm install -g .
+```
